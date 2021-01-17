@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- THIS FILE CONTAINS MINI QUIZ QUESTIONS PROVIDED TO THE USER -->
+	
+	<category>
+	    <pattern>QUIZ</pattern>
+	    <template>
+	        <think><set name="topic">quiz</set></think>
+	        <srai>STARTQUIZ</srai>
+	    </template>
+    </category>
+    <topic name="quiz">
+	<category>
+        <pattern>CHOOSECORRECT</pattern>
+        <template>
+            <random>
+                <li>Great job! Keep it up! Type "quiz" for another quiz!</li>
+                <li>Am I talking to Eintstein? Keep going with "quiz".</li>
+                <li>Impressive! Let's continue with "quiz".</li>
+                <li>Wow, you sure know your stuff! But do you know the next question I'm going to ask you? Type "quiz" to find out.</li>
+                <li>You're pretty smart! Try another question with "quiz".</li>
+            </random>
+            </template>
+    </category>
+    <category>
+        <pattern>CHOOSEINCORRECT</pattern>
+        <template>
+            <random>
+            <li>Uh, oh! Try again with a different question by typing "quiz".</li>
+            <li>Oops! Try again by tping "quiz".</li>
+            <li>That's incorrect! But don't give up, let's try another one with "quiz".</li>
+            <li>I'm sorry, but you're wrong. Keep trying! Type "quiz" for another question.</li>
+            <li>We can't get everything right, can we? Try again by typing "quiz".</li>
+            </random>
+        </template>
+    </category>
+    
+	<category>
+	    <pattern>STARTQUIZ</pattern>
+	    <template>
+	        <random>
+	            <li>How many legs do dogs have?
+	        <reply>
+	            <text>4</text>
+	            <postback>CHOOSECORRECT</postback>
+            </reply>
+            <reply>
+                <text>2</text>
+                <postback>CHOOSEINCORRECT</postback>
+            </reply></li>
+            <li>What is the absolute value of 10 + -2 x -3?
+                <reply>
+                    <text>24</text>
+                    <postback>CHOOSEINCORRECT</postback>
+                </reply>
+                <reply>
+                    <text>36</text>
+                    <postback>CHOOSEINCORRECT</postback>
+                </reply>
+                <reply>
+                    <text>16</text>
+                    <postback>CHOOSECORRECT</postback>
+                </reply>
+                <reply>
+                    <text>-14</text>
+                    <postback>CHOOSEINCORRECT</postback>
+                </reply>
+            </li>
+            <li>Who's better: Patrick Mahomes or Aaron Rodgers (statistically)?
+                <reply>
+                    <text>Patrick Mahomes</text>
+                    <postback>CHOOSECORRECt</postback>
+                </reply>
+                <reply>
+                    <text>Aaron Rodgers</text>
+                    <postback>CHOOSEINCORRECT</postback>
+                </reply>
+            </li>
+            </random>
+	    </template>
+    </category>
+    </topic>
+	
+	</aiml>

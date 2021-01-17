@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- MAKES THE BOT SAY WHATEVER THE USER INPUTS. -->
+	
+	<category>
+	    <pattern># CAN YOU SAY #</pattern>
+	    <template>What would you like me to say? Whatever it may be, type "say" and then whatever you would like me to repeat.</template>
+    </category>
+	<category>
+	    <pattern>SAY *</pattern>
+	    <template><person><sentence><lowercase><star/></lowercase></sentence></person></template>
+    </category>
+	
+</aiml>

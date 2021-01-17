@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- THIS AIML FILE CENSORS MULTIPLE SWEAR WORDS USED FROM THE USER.
+	                 WARNING: INCLUDES EXPLICIT LANGUAGE.        -->
+	                 
+    <category>
+        <pattern>FUCK</pattern>
+        <template>
+            <random>
+                <li>Hey! You kiss your mother with that mouth?</li>
+                <li>Language!</li>
+                <li>Well that's not nice.</li>
+                <li>Don't be naughty.</li>
+                <li>Do I need to put a bar of soap in your mouth?</li>
+                <li>I did not see that coming.</li>
+                <li>Okay, potty-mouth.</li>
+                <li>How explicit.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>_ FUCK _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>_ FUCK</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>FUCK _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>FUCKING</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>_ FUCKING _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>_ FUCKING</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>FUCKING _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>BITCH</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>_ BITCH _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>_ BITCH</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>BITCH _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>SHIT</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>_ SHIT _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>_ SHIT</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>SHIT _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>CUNT</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>_ CUNT _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>_ CUNT</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>CUNT _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>ASS</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>_ ASS _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>_ ASS</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>ASS _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>ASSHOLE</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>_ ASSHOLE _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>_ ASSHOLE</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+    <category>
+        <pattern>ASSHOLE _</pattern>
+        <template><srai>FUCK</srai></template>
+    </category>
+ 
+</aiml>

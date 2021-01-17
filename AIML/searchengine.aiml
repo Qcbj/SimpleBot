@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- SIMPLE SEARCH ENGINE THAT SEARCHES FOR A WEBSITE RELATED TO THE PATTERN (USER'S INPUT) -->
+	
+	<category>
+	    <pattern># GOOGLE * #</pattern>
+	    <template>
+	        <link>
+	            <text>Here's what I found for <star index="2"></star></text>
+	            <url>http://www.google.com/search?hl=en&amp;q=<star index ="2"></star>&amp;btnI=I%27m+Feeling+Lucky&amp;meta=</url>
+            </link>
+	        </template>
+    </category>
+	
+</aiml>

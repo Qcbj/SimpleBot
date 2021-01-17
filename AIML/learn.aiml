@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- THIS FILE INCLUDES PATTERNS THAT THE USER WOULD LIKE THE BOT TO LEARN. -->
+	
+	
+	<category>
+	    <pattern>* IS *</pattern>
+	    <template>
+	        I have put that in my memory.
+	        <learn>
+	            <category>
+	                <pattern>WHAT IS <eval><star/></eval></pattern>
+	                <template>If I remember correctly, you told me that it is <eval><star index="2"></star></eval>.</template>
+                </category>
+                <category>
+                    <pattern>WHO IS <eval><star/></eval></pattern>
+                    <template>If I remember correctly, you told me that they are <eval><star index="2"></star></eval>.</template>
+                </category>
+                <category>
+                    <pattern>NAME SOMETHING THAT IS <eval><star index="2"></star></eval></pattern>
+                    <template>Oo, I know! <sentence><eval><star/></eval></sentence> is!</template>
+                </category>
+                <category>
+                    <pattern>NAME SOMEONE WHO IS <eval><star index="2"></star></eval></pattern>
+                    <template>Oo, I know! <sentence><eval><star/></eval></sentence> is!</template>
+                </category>
+	        </learn>
+	    </template>
+    </category>
+</aiml>

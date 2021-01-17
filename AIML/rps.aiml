@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- PLAY ROCK, PAPER, SCISSORS WITH THE BOT. -->
+	
+	<category>
+	    <pattern># RPS #</pattern>
+	    <template>
+	        Okay. Let's play rock, paper, scissors. What is your pick?
+	        <think><set name="topic">rps</set></think>
+	    </template>
+    </category>
+    <topic name = "rps">
+    <category>
+        <!--<that>What is your pick</that>-->
+        <pattern># ROCK #</pattern>
+        <template>
+            <random>
+                <li value="rock">I choose rock... Tie! Let's go again.</li>
+                <li value="paper">I choose paper... I win! Try again.</li>
+                <li value="scissors">I choose scissors... Darn, you beat me! Bet you I'll win the next one.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern># PAPER #</pattern>
+        <template>
+            <random>
+                <li value="rock">I choose rock... Darn, you beat me! Bet you I'll win the next one.</li>
+                <li value="paper">I choose paper... Tie! Let's go again.</li>
+                <li value="scissors">I choose scissors... I win! Try again.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern># SCISSORS #</pattern>
+        <template>
+            <random>
+                <li value="rock">I choose rock... I win! Try again.</li>
+                <li value="paper">I choose paper... Darn, you beat me! Bet you I'll win the next one.</li>
+                <li value="scissors">I choose scissors... Tie! Let's go again.</li>
+            </random>
+        </template>
+    </category>
+    </topic>
+    
+	
+</aiml>

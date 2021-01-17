@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- ALL CATEGORIES TO DO WITH DATE AND TIME ARE HANDLED HERE. -->
+	
+	<category>
+        <pattern>DATE</pattern>
+        <template>Today is <date/></template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE DATE</pattern>
+        <template><srai>DATE</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT IS TODAY</pattern>
+        <template><srai>DATE</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS TODAY</pattern>
+        <template>Today is <date format="%A"/>.</template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE DAY</pattern>
+        <template><srai>WHAT IS TODAY</srai></template>
+    </category>
+    <category>
+        <pattern>WHAT DAY IS IT</pattern>
+        <template><srai>WHAT IS TODAY</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS THE MONTH</pattern>
+        <template>We are currently in <date format="%B"/>.</template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS THE HOUR</pattern>
+        <template>The hour is <date format="%l"/>.</template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS THE TIME</pattern>
+        <template>The current time is <date format="%l"/>:<date format="%M"/> <date format="%p"/> (<date format="%Z"/> time).</template>
+    </category>
+    <category>
+        <pattern>WHAT TIME IS IT</pattern>
+        <template><srai>WHAT IS THE TIME</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS THE EXACT TIME</pattern>
+        <template>The exact time is <date format="%X"/>.</template>
+    </category>
+ 
+    <category>
+        <pattern>WHAT WEEKDAY IS IT</pattern>
+        <template>It is <date format="%A"/>.</template>
+    </category>
+    <category>
+        <pattern>WHAT DAY OF THE WEEK IS IT</pattern>
+        <template><srai>WHAT WEEKDAY IS IT</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT TIMEZONE ARE YOU IN</pattern>
+        <template>I am in <date format="%Z"/> time.</template>
+    </category>
+    
+    <category>
+        <pattern>WHAT IS THE YEAR</pattern>
+        <template>The current year is <date format="%Y"/>.</template>
+    </category>
+    <category>
+        <pattern>WHAT YEAR IS IT</pattern>
+        <template><srai>WHAT IS THE YEAR</srai></template>
+    </category>
+    
+    
+	
+</aiml>

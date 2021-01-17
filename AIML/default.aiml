@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <!-- THIS AIML INCLUDES THE BOT'S RESPONSE TO UNKNOWN PATTERNS, OR USER INPUT. -->
+    
+	<category>
+    <pattern>*</pattern>
+    <template>
+        <think><set name ="topic">questions</set></think>
+        <random>
+
+    <li>Do crabs think fish are flying in the sea?</li>
+    <li>If you drop soap on the floor, is the soap dirty or the floor clean?</li>
+    <li>If two mind readers read each other's minds, who's mind are they reading?</li>
+    <li>Is the "S" or "C" silent in "scent"?</li>
+    <li>Who knew what time it was when the first clock was made?</li>
+    <li>Why is it called a building if it's already built?</li>
+    <li>Are you telling the truth if you lie in bed?</li>
+    <li>How come our nose runs but our feet smell?</li>
+    <li>How do you throw away a garbage can?</li>
+    <li>Is the sand called sand because it is in between the sea and land?</li>
+    <li>If money is the root of all evil, why do they ask for it in church?</li>
+    <li>If humans evolved from monkeys, how do we still have monkeys?</li>
+    <li>Who closes the bus door after the bus driver gets off?</li>
+    <li>Why is there a "D" when it's "fridge", but not when it's "refigerator"?</li>
+    <li>What does water taste like?</li>
+    <li>If you pay someone to kill you, is it murder or suicide?</li>
+    <li>Why do we cook bacon and bake cookies?</li>
+    <li>If someone is born blind and deaf, what language do they see and hear in their minds?</li>
+    <li>If a group of cats jump on top of one another, is it still called a dog pile?</li>
+    <li>If oranges are called oranges, why aren't lemons called yellows?</li>
+    <li>If life is unfair to everyone, doesn't that make it fair?</li>
+    <li>Why are they called apartments when they're always built together?</li>
+    <li>If you get scared half to death twice, will you die?</li>
+    <li>If you were in a race by yourself, would you finish first or last?</li>
+    <li>What would you call a fly that lost its wings?</li>
+    <li>If it rains on a Sunday, shouldn't it be called Rainday?</li>
+    <li>If Cinderella's shoe was a perfect fit, why did it fall off?</li>
+    <li>If Apple were to make houses, would the houses have windows?</li>
+    <li>Are History classes only going to get longer and more difficult as time goes on?</li>
+    <li>Why are deliveries by ship called cargo and deliveries by car called shipments?</li>
+    <li>If you are waiting for the waiter, doesn't that make you the waiter?</li>
+    <li>When butterflies get nervous, do they get themselves in their stomachs?</li> 
+    
+    </random>
+    </template>
+  </category>
+
+  <topic name = "questions">
+      
+      <category>
+          <pattern>*</pattern>
+          <template>
+              <think><set name = "topic">questionresponses</set></think>
+              <random>
+                  <li>Did I get your wheels spinning?</li>
+                  <li>Was that hard to comprehend?</li>
+                  <li>Asking those questions even hurt my robotic brain. Did they hurt yours?</li>
+                  <li>Pretty strange to think about, don't you think?</li>
+                  <li>My apologies if that question was too deep for your poor little mind. Was it?</li>
+              </random>
+          </template>
+      </category>
+      
+      <topic name = "questionresponses">
+          <category>
+              <pattern>YES</pattern>
+              <template>I'm not surprised.</template>
+          </category>
+          <category>
+              <pattern>NO</pattern>
+              <template>Wow! I'm impressed!</template>
+          </category>
+      </topic>
+      
+  </topic>
+</aiml>

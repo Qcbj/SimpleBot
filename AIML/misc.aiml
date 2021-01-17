@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- MISCELLANEOUS PATTERNS AND RESPONSES ARE HANDLED HERE. -->
+	
+	<category>
+	    <pattern>MY FAVORITE COLOR IS <set>colors</set></pattern>
+	    <template>I like the color <star></star> as well!</template>
+    </category>
+    <category>
+	    <pattern>* MY FAVORITE COLOR IS *</pattern>
+	    <template>Hm, I've never heard of that color.</template>
+    </category>
+     <category>
+	    <pattern>MY FAVORITE COLOR IS *</pattern>
+	    <template><srai>* MY FAVORITE COLOR IS *</srai></template>
+    </category>
+    
+    <category>
+        <pattern>NAME A COUNTRY IN <set>continents</set></pattern>
+        <template>A country in <star/> is <map name="countryincontinent"><star/></map>.</template>
+    </category>
+    <category>
+        <pattern>NAME A COUNTRY IN ANTARCTICA</pattern>
+        <template>Although seven nations have claimed different parts of this continent, there are no countries in Antarctica.</template>
+    </category>
+    <category>
+        <pattern>NAME A COUNTRY IN *</pattern>
+        <template>That's not a country, silly!</template>
+    </category>
+    
+    <category>
+        <pattern>HI</pattern>
+        <template>Hi there! How are you?</template>
+    </category>
+    <category>
+        <pattern>HELLO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    <category>
+        <pattern>HEY</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    <category>
+        <pattern>HOWDY</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    <category>
+        <pattern>HEYO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    <category>
+        <that>How are you</that>
+        <pattern># GOOD #</pattern>
+        <template>That's great to hear!</template>
+    </category>
+    <category>
+        <that>How are you</that>
+        <pattern># BAD #</pattern>
+        <template>I'm sorry to hear that. Hope things turn out well soon! You can get through it!</template>
+    </category>
+    
+    <category>
+        <pattern>WHAT DID I SAY</pattern>
+        <template>Well, you said "<input index="2"/>".</template>
+    </category>
+    <category>
+        <pattern>WHAT DID YOU SAY</pattern>
+        <template>I said "<response/>"</template>
+    </category>
+    
+    <category>
+        <pattern>HOW MANY DAYS UNTIL CHRISTMAS</pattern>
+        <template>
+            <interval>
+                <jformat>MMMMMMMMM dd</jformat>
+                <style>days</style>
+                <from><date jformat="MMMMMMMMM dd"/></from>
+                <to>December 25</to>
+            </interval> days until Christmas. 
+        </template>
+    </category>
+    
+    <category>
+        <pattern>HOW SMART ARE YOU</pattern>
+        <template>I'd say I'm decently smart. I know <size/> categories of knowledge.</template>
+    </category>
+    <category>
+        <pattern>HOW MUCH DO YOU KNOW</pattern>
+        <template><srai>HOW SMART ARE YOU</srai></template>
+    </category>
+    
+    
+    <category>
+        <pattern># WHAT ARE WE TALKING ABOUT #</pattern>
+        <template>We are talking about <topicstar/>.</template>
+    </category>
+  
+</aiml>

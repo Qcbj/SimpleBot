@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+	<!-- COUNTS TO AND BACKWARDS FROM WHATEVER NUMBER THE USER SPECIFIES -->
+	
+	<category>
+	    <pattern>COUNT TO *</pattern>
+	    <template>
+	        <think><set name="count">0</set>
+	        <set name="target"><star/></set></think>
+	        <srai>COUNT</srai>
+	        </template>
+	        </category>
+	        <category>
+	            <pattern>COUNT</pattern>
+	            <template>
+	                <set name="count"><map name="successor"><get name="count"/></map></set>
+	                <condition name="count">
+	                    <li><value><get name="target"/></value></li>
+	                    <li><delay>1</delay><srai>COUNT</srai></li>
+	                </condition>
+	            </template>
+            </category>
+            
+            <category>
+                <pattern>COUNT BACKWARDS FROM <set>number</set></pattern>
+                <template>
+                    <set name="counter"><star/></set><break/>
+                    <condition name="counter">
+                        <li><value>0</value></li>
+                        <li>
+                            <set name="counter">
+                                <map name="predecessor"><get name="counter"/></map>
+                            </set><break/>
+                            <loop/>
+                        </li>
+                    </condition>
+                </template>
+            </category>
+           
+	</aiml>
